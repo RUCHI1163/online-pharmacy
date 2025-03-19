@@ -1,0 +1,155 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login page</title>
+   
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet"> 
+    <!--google font-->                       
+     <!--link for css file-->
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <!--link for css file-->
+    
+    <!--library-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--library-->
+
+</head>
+<body>
+    
+<!--header-->
+<header class="header">
+    <a href="#" class="logo">
+      <img src="images/logo.png">
+    </a>
+    
+    <!--nav bar-->
+<nav class="headbar">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="doc.html">Doctors</a>
+    <a href="med.html">Medicine</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!--nav bar-->
+    
+    <div class="menubtn">
+    <button>Helpline</button>
+</div>
+</header>
+<!--header-->
+    
+<!--form-->
+
+    <div class="container" id="container">
+        <!--sign up-->
+        <div class="form sign-up-container">
+          <form action="#">
+            <h1>Create An Account</h1>
+              <!--icons-->
+            <div class="social-container">
+              <a href="#" class="Social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#" class=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                <a href="#" class="Social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+</div>
+<!--icons-->
+              <span>or use your email or registration</span>
+              <!--input field-->
+              <div class="input-field">
+               <i class="fa fa-user"></i>
+              <input type="text" placeholder="Username">
+              </div>
+              
+              <div class="input-field">
+              <i class="fa fa-envelope"></i>
+              <input type="email" placeholder="Email">
+              </div>
+              
+              <div class="input-field">
+              <i class="fa fa-lock"></i>
+              <input type="password" placeholder="Password">
+              </div>
+              <!--input field-->
+              
+              <button>Sign Up</button>
+
+</form>
+</div>
+        <!--sign up-->
+        
+<!--sign in-->
+        <div class="form sign-in-container">
+          <form action="#">
+            <h1>login</h1>
+              <!--icons-->
+            <div class="social-container">
+              <a href="#" class="Social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#" class=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                <a href="#" class="Social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+</div>
+<!--icons-->
+              <span>or use your account</span>
+              <!--input field-->
+              <div class="input-field">
+               <i class="fa fa-user"></i>
+              <input type="text" placeholder="Username">
+              </div>
+              
+              <div class="input-field">
+              <i class="fa fa-envelope"></i>
+              <input type="email" placeholder="Email">
+              </div>
+              
+              <div class="input-field">
+              <i class="fa fa-lock"></i>
+              <input type="password" placeholder="Password">
+              </div>
+              <!--input field-->
+              <a href="#">Forgot Your Password</a>
+              <button>Sign In</button>
+
+</form>
+</div>
+<!--sign in-->
+        <!--overlay-->
+    <div class="overlay-container">
+        <div class="overlay">
+        <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To Keep Connected With Us Please Login With Your Personal Info</p>
+        <img src="images/s1.png" style="height: 25rem; width: 30rem; padding-top: 5%;">
+            <button class="btn" id="signin"> Sign in</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+        <h1>Hello User!</h1>
+        <p>Enter Your Personal Details And Start Your Journey With Us</p>
+        <img src="images/s3.png" style="height: 25rem; width: 30rem;">
+            <button class="btn" id="signup"> Sign Up</button>
+        </div>
+        </div>
+    
+        </div>
+        <!--overlay-->
+</div>
+    <!--form-->
+    
+    <script>
+    const signUpbutton = document.getElementById('signup');
+    const signInbutton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+        
+        signUpButton.addEventListener('click',() =>{
+            container.classList.add("right-panel-active");
+        });
+         signInButton.addEventListener('click',() =>{
+            container.classList.remove("right-panel-active");
+        });
+       
+    </script>
+    
+</body>
+</html>
